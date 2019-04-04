@@ -5,7 +5,7 @@ var sass = require( 'gulp-sass' );
 var watch = require( 'gulp-watch' );
 var rename = require( 'gulp-rename' );
 var concat = require( 'gulp-concat' );
-var uglify = require( 'gulp-uglify' );
+var terser = require( 'gulp-terser' );
 var imagemin = require( 'gulp-imagemin' );
 var ignore = require( 'gulp-ignore' );
 var rimraf = require( 'gulp-rimraf' );
@@ -143,7 +143,7 @@ gulp.task( 'scripts', function() {
     ];
   gulp.src( scripts )
     .pipe( concat( 'theme.min.js' ) )
-    .pipe( uglify() )
+    .pipe( terser() )
     .pipe( gulp.dest( paths.js ) );
 
   gulp.src( scripts )
