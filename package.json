@@ -45,6 +45,7 @@
     "gulp-sourcemaps": "2.6.4",
     "gulp-terser": "1.1.7",
     "gulp-watch": "5.0.1",
+    "bootstrap.native": "^2.0.25",
     "run-sequence": "^2.2.1",
     "undescores-for-npm": "^1.0.0",
     "gulp-autoprefixer": "6.0.0"
