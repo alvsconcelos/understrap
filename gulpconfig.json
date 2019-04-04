@@ -15,6 +15,7 @@
     "imgsrc": "./src/img",
     "sass": "./sass",
     "node": "./node_modules/",
+    "bsnative": "./node_modules/bootstrap.native/dist",
     "bower": "./bower_components/",
     "dev": "./src",
     "dist": "./dist",

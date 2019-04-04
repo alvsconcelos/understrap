@@ -131,7 +131,10 @@ gulp.task( 'scripts', function() {
     var scripts = [
 
         // Start - All BS4 stuff
-        paths.dev + '/js/bootstrap4/bootstrap.bundle.js',
+        // paths.dev + '/js/bootstrap4/bootstrap.bundle.js',
+
+        // bootstrap.native stuff
+        paths.bsnative + '/bootstrap-native-v4.js',
 
         // End - All BS4 stuff
 
