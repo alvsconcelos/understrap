@@ -218,6 +218,12 @@ msgctxt "post author"
 msgid "by %s"
 msgstr ""
 
+#: inc/template-tags.php:37
+#, php-format
+msgctxt "post author"
+msgid "Posted by"
+msgstr ""
+
 #. translators: used between list items, there is a space after the comma
 #: inc/template-tags.php:51 inc/template-tags.php:57
 msgid ", "

@@ -1,0 +1,70 @@
+article[class^="post-"] {
+
+	.entry-header, 
+	.entry-thumbnail,
+	.entry-content {
+
+		figure {
+			position: relative;
+			width: 100% !important;
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+
+			figcaption {
+				width: 100%;
+				background: grey;
+				padding: $margin-15/2; 
+				font-size: 0.875rem;
+				color: white;
+				text-align: center;
+			}
+		}
+	} 
+
+	.entry-content {
+
+		h2,
+		h3,
+		h4,
+		h5 {
+			font-weight: 500; // Semibold
+			margin-bottom: $margin-15;
+		}
+
+		a {
+			text-decoration: underline;
+		}
+
+		p {
+			text-align: justify;
+			line-height: 1.5;
+			margin-bottom: $margin-15 * 2;
+
+			>iframe {
+				width: 100%;
+			}
+
+			$identText: false;
+
+			@if $identText {
+				text-indent: 1.5rem;
+
+				>a {
+					>img {
+						margin-left: -1.5rem !important;
+					}
+				}
+
+				>iframe {
+					margin-left: -1.5rem;
+				}
+			}
+
+
+		}
+
+	}
+}

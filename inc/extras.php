@@ -134,3 +134,19 @@ if ( ! function_exists( 'understrap_mobile_web_app_meta' ) ) {
 	}
 }
 add_action( 'wp_head', 'understrap_mobile_web_app_meta' );
+
+function remove_h1_from_editor( $settings ) {
+	$settings['block_formats'] = 'Paragraph=p;Heading 2=h2;Heading 3=h3;Heading 4=h4;Heading 5=h5;Heading 6=h6;Preformatted=pre;';
+    return $settings;
+}
+add_filter( 'tiny_mce_before_init', 'remove_h1_from_editor' );
+
+function get_the_post_thumbnail_with_caption($post_id, $size = 'large', $class = '') {
+	
+	$image = get_the_post_thumbnail( $post_id, $size );
+	$caption = get_the_post_thumbnail_caption( $post_id);
+
+	if($caption) $caption = sprintf('<figcaption class="wp-caption-text">%s</figcaption>', $caption);
+
+	return sprintf('<figure class="post-thumbnail alignnone %s"> %s %s </figure>', $class, $image, $caption);
+}
