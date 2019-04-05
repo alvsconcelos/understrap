@@ -1,10 +1,6 @@
 body {
     $heights: ($header-min-height + $footer-min-height);
 
-    &.admin-bar {
-        $heights: $heights + 32px;
-    }
-
     >.site {
         .wrapper{
             &:nth-child(2) {
@@ -12,5 +8,16 @@ body {
             }
         }
     }
-
+    
+    &.admin-bar {
+        $heights: $heights + 32px;
+        >.site {
+            .wrapper{
+                &:nth-child(2) {
+                    min-height: calc(100vh - #{$heights});
+                }
+            }
+        }        
+    }
+    
 }

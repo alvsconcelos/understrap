@@ -135,6 +135,27 @@ if ( ! function_exists( 'understrap_mobile_web_app_meta' ) ) {
 }
 add_action( 'wp_head', 'understrap_mobile_web_app_meta' );
 
+function put_custom_logo_on_login_page() {
+ 
+    if ( has_custom_logo() ) :
+ 
+        $image = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'full' );
+        ?>
+        <style type="text/css">
+            .login h1 a {
+                background-image: url(<?php echo esc_url( $image[0] ); ?>);
+                background-size: contain;
+                height: 65px;
+                width: auto;
+            }
+        </style>
+		<?php
+		
+    endif;
+}
+ 
+add_action( 'login_head', 'put_custom_logo_on_login_page', 100 );
+
 function remove_h1_from_editor( $settings ) {
 	$settings['block_formats'] = 'Paragraph=p;Heading 2=h2;Heading 3=h3;Heading 4=h4;Heading 5=h5;Heading 6=h6;Preformatted=pre;';
     return $settings;
