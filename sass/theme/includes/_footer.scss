@@ -1,7 +1,17 @@
 div#wrapper-footer {
-    background: $primary;
+	background: $primary;
 
-    a {
-        color: #ffffff; 
+	a {
+		color: #ffffff;
+	}
+
+	.dev-info {
+		float: right;
+        opacity: .5;
+        
+        &:hover {
+            opacity: 1;
+        }
     }
+    
 }

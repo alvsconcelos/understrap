@@ -28,7 +28,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<div class="site-info">
 
-						<?php understrap_site_info(); ?>
+						<?php understrap_site_info(); ?> <span class="dev-info"><a href="https://underbits.com.br"> Desenvolvido por: underbits.com.br</a></span>
 
 					</div><!-- .site-info -->
 
