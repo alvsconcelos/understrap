@@ -28,7 +28,7 @@ $container = get_theme_mod( 'themenamefunction_container_type' );
 
 					<div class="site-info">
 
-						<?php themenamefunction_site_info(); ?> <span class="dev-info"><a href="https://underbits.com.br"> Desenvolvido por: underbits.com.br</a></span>
+						<?php themenamefunction_site_info(); ?> <span class="dev-info"><a href="authorurl"> Desenvolvido por: authorname</a></span>
 
 					</div><!-- .site-info -->
 

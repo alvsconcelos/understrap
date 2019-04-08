@@ -118,7 +118,7 @@ if ( ! function_exists( 'themenamefunction_categorized_blog' ) ) {
 add_action( 'edit_category', 'themenamefunction_category_transient_flusher' );
 add_action( 'save_post',     'themenamefunction_category_transient_flusher' );
 
-if ( ! function_exists( 'themenamefunction_category_transient_flusher' ) ) {
+if ( !function_exists( 'themenamefunction_category_transient_flusher' ) ) {
 	function themenamefunction_category_transient_flusher() {
 		if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
 			return;

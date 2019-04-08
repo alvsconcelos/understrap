@@ -3,3 +3,5 @@ themetextdomain - text domain
 themenamepackage - theme package name
 themenamefunction_ - theme functions
 themenametag- - style tags etc
+authorurl - author url
+authorname - author name
