@@ -2,14 +2,14 @@
 /**
  * Sidebar setup for footer full.
  *
- * @package understrap
+ * @package themenamepackage
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-$container = get_theme_mod( 'understrap_container_type' );
+$container = get_theme_mod( 'themenamefunction_container_type' );
 
 ?>
 

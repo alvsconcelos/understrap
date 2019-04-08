@@ -4,14 +4,14 @@
  *
  * Contains the closing of the #content div and all content after
  *
- * @package understrap
+ * @package themenamepackage
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-$container = get_theme_mod( 'understrap_container_type' );
+$container = get_theme_mod( 'themenamefunction_container_type' );
 ?>
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
@@ -28,7 +28,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<div class="site-info">
 
-						<?php understrap_site_info(); ?> <span class="dev-info"><a href="https://underbits.com.br"> Desenvolvido por: underbits.com.br</a></span>
+						<?php themenamefunction_site_info(); ?> <span class="dev-info"><a href="https://underbits.com.br"> Desenvolvido por: underbits.com.br</a></span>
 
 					</div><!-- .site-info -->
 

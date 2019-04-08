@@ -2,7 +2,7 @@
 /**
  * Rest in peace.
  *
- * @package understrap
+ * @package themenamepackage
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -15,8 +15,8 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @deprecated 0.8.9
  */
-if ( ! function_exists( 'understrap_slbd_count_widgets' ) ) {
-	function understrap_slbd_count_widgets( $sidebar_id ) {
+if ( ! function_exists( 'themenamefunction_slbd_count_widgets' ) ) {
+	function themenamefunction_slbd_count_widgets( $sidebar_id ) {
 		// If loading from front page, consult $_wp_sidebars_widgets rather than options
 		// to see if wp_convert_widget_settings() has made manipulations in memory.
 		global $_wp_sidebars_widgets;

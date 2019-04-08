@@ -2,7 +2,7 @@
 /**
  * Post rendering content according to caller of get_template_part.
  *
- * @package understrap
+ * @package themenamepackage
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<?php if ( 'post' == get_post_type() ) : ?>
 
 			<div class="entry-meta">
-				<?php understrap_posted_on(); ?>
+				<?php themenamefunction_posted_on(); ?>
 			</div><!-- .entry-meta -->
 
 		<?php endif; ?>
@@ -40,7 +40,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<?php
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
+				'before' => '<div class="page-links">' . __( 'Pages:', 'themetextdomain' ),
 				'after'  => '</div>',
 			)
 		);
@@ -50,7 +50,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<footer class="entry-footer">
 
-		<?php understrap_entry_footer(); ?>
+		<?php themenamefunction_entry_footer(); ?>
 
 	</footer><!-- .entry-footer -->
 

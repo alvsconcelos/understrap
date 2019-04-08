@@ -1,15 +1,15 @@
 <?php
 /**
- * Understrap functions and definitions
+ * ThemeName functions and definitions
  *
- * @package understrap
+ * @package themenamepackage
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-$understrap_includes = array(
+$themenamefunction_includes = array(
 	'/theme-settings.php',                  // Initialize theme default settings.
 	'/setup.php',                           // Theme setup and custom theme supports.
 	'/widgets.php',                         // Register widget area.
@@ -27,7 +27,7 @@ $understrap_includes = array(
 	'/deprecated.php',                      // Load deprecated functions.
 );
 
-foreach ( $understrap_includes as $file ) {
+foreach ( $themenamefunction_includes as $file ) {
 	$filepath = locate_template( 'inc' . $file );
 	if ( ! $filepath ) {
 		trigger_error( sprintf( 'Error locating /inc%s for inclusion', $file ), E_USER_ERROR );

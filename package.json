@@ -1,31 +1,8 @@
 {
-  "name": "understrap",
-  "version": "0.9.1",
-  "description": "WordPress Theme framework",
-  "main": "index.js",
-  "scripts": {
-    "postinstall": "gulp copy-assets"
-  },
-  "engines": {
-    "npm": ">=2.1.8"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/holger1411/understrap.git"
-  },
-  "keywords": [
-    "wordpress",
-    "theme",
-    "framework",
-    "bootstrap",
-    "underscores"
-  ],
-  "author": "Holger Koenemann",
-  "license": "GPL-2.0",
-  "bugs": {
-    "url": "https://github.com/holger1411/understrap/issues"
-  },
-  "homepage": "https://understrap.com",
+  "name": "themenamepackage",
+  "version": "0.5.0",
+  "description": "Bootstrap theme framework based on underscores starter theme.",
+  "main": "gulpfile.js",
   "dependencies": {
     "bootstrap": "4.3.1",
     "browser-sync": "^2.26.3",
@@ -49,5 +26,15 @@
     "run-sequence": "^2.2.1",
     "undescores-for-npm": "^1.0.0",
     "gulp-autoprefixer": "6.0.0"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": " "
+  },
+  "author": "underbits.com.br",
+  "license": "ISC"
 }

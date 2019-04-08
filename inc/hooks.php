@@ -2,32 +2,32 @@
 /**
  * Custom hooks.
  *
- * @package understrap
+ * @package themenamepackage
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-if ( ! function_exists( 'understrap_site_info' ) ) {
+if ( ! function_exists( 'themenamefunction_site_info' ) ) {
 	/**
 	 * Add site info hook to WP hook library.
 	 */
-	function understrap_site_info() {
-		do_action( 'understrap_site_info' );
+	function themenamefunction_site_info() {
+		do_action( 'themenamefunction_site_info' );
 	}
 }
 
-if ( ! function_exists( 'understrap_add_site_info' ) ) {
-	add_action( 'understrap_site_info', 'understrap_add_site_info' );
+if ( ! function_exists( 'themenamefunction_add_site_info' ) ) {
+	add_action( 'themenamefunction_site_info', 'themenamefunction_add_site_info' );
 
 	/**
 	 * Add site info content.
 	 */
-	function understrap_add_site_info() {
+	function themenamefunction_add_site_info() {
 
 		$site_info = sprintf('© %s - %d | Todos os direitos reservados.', get_bloginfo('name'), date('Y'));
 
-		echo apply_filters( 'understrap_site_info_content', $site_info ); // WPCS: XSS ok.
+		echo apply_filters( 'themenamefunction_site_info_content', $site_info ); // WPCS: XSS ok.
 	}
 }
